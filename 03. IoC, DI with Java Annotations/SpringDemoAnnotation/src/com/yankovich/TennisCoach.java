@@ -2,9 +2,11 @@ package com.yankovich;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component
+@Lazy // 1.4.4. Lazy-initialized Beans
 public class TennisCoach implements Coach {
 
     @Autowired
